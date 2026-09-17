@@ -6,8 +6,6 @@
   so browsers don't serve a stale cached copy.
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
-
 /* ---------- Design tokens ---------- */
 :root {
   /* Brand */
