@@ -472,3 +472,14 @@ p { margin: 0 0 var(--cipp-space-2) 0; }
 [data-theme="dark"] .cipp-slideout__overlay { background: rgba(0, 0, 0, 0.6); }
 
 /* Outline button hover uses neutral-100, which is already dark here. */
+
+/* Kanban settings menu: its light colors are hardcoded in the page HTML,
+   so override them here for dark. */
+[data-kb-theme="dark"] .kb-menu,
+[data-theme="dark"] .kb-menu {
+  background: var(--cipp-surface);
+  border-color: var(--cipp-neutral-200);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+[data-kb-theme="dark"] .kb-menu .kb-menu__item,
+[data-theme="dark"] .kb-menu .kb-menu__item { color: var(--cipp-neutral-700); }
